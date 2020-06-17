@@ -3,12 +3,13 @@ import Header from '../../../components/header';
 import { Column, Section, Title, Container, Card } from 'rbx';
 import LogoImage from '../../../assets/images/logo.png';
 import '../../../styles/auth.scss';
+import RegisterForm from "../../../components/auth/register_form";
 
 const Register = () => (
   <Fragment>
     <Header/>
 
-    <Section size="large" className="auth">
+    <Section size="medium" className="auth">
       <Container>
         <Column.Group centered>
           <Column size={3}>
@@ -18,7 +19,7 @@ const Register = () => (
                 <Section>
                   <Column.Group centered>
                     <Column size={12}>
-                      <img src={LogoImage}/>
+                      <img src={LogoImage} alt="Logo" />
                     </Column>
                   </Column.Group>
 
@@ -30,6 +31,8 @@ const Register = () => (
                     </Column>
                   </Column.Group>
                 </Section>
+                
+                <RegisterForm/>
                 
               </Card.Content>
             </Card>
