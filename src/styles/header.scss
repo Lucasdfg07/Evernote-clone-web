@@ -10,4 +10,16 @@ nav.navbar {
       margin-top:15px;
     }
   }
+
+  .navbar-logged{
+    .navbar-menu{
+      background-color: $custom-purple;  
+    }
+  }
+}
+
+.navbar-logged{
+  .navbar-menu{
+      background-color: $custom-purple;  
+  }
 }

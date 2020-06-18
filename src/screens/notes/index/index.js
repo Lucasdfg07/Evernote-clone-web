@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react';
+import HeaderLogged from "../../../components/header_logged";
 
 const Notes = () => (
   <Fragment>
-        Hello World
+    <HeaderLogged/>
+    Hello World
   </Fragment>
 );
 
