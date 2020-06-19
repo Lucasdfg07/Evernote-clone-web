@@ -3,7 +3,7 @@
 
 
 ## Evernote Clone Web
-This is an application made with React JS. It's an application made in the course Full Stack Developer in 8 weeks by OneBitCode.
+This is an application made with React JS. It's the final application made in the course Full Stack Developer in 8 weeks by OneBitCode.
 
 ![Principal Image](https://github.com/Lucasdfg07/Evernote-clone-web/blob/master/src/assets/images/presentation.png)
 
