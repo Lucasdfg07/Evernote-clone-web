@@ -28,7 +28,7 @@ useEffect(() => {
 
   return(
     <Button color="danger" onClick={() => deleteUser()}>
-      Excluir conta
+      Delete Account
     </Button>
   )
 }
