@@ -1,0 +1,17 @@
+@import 'custom_colors';
+
+.notes{
+  height: calc(100% - 70px);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-top: 0px;
+}
+
+.bm-menu {
+  background: white;
+  padding-top: 10px;
+}
+
+.list-item.is-active{
+  background-color: #E4E4E4;
+}
