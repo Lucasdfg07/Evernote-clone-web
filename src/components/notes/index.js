@@ -5,6 +5,7 @@ import List from "../notes/list";
 import NoteService from '../../services/note';
 import "../../styles/notes.scss";
 import Editor from "../notes/editor";
+import Search from '../notes/search';
 
 
 function Notes(props) {
@@ -51,6 +52,11 @@ function Notes(props) {
     setCurrentNote(updatedNote.data);
   }
 
+  const searchNotes = async (query) => {
+    const response = await NoteService.search(query);
+    setNotes(response.data)
+  }
+
   return (
     <Fragment>
       <div className="notes" id="notes">
@@ -63,6 +69,8 @@ function Notes(props) {
           customBurgerIcon={ false }
           customCrossIcon={ false }
         >
+          <Search searchNotes={searchNotes} fetchNotes={fetchNotes} />
+          
           <List
             notes={notes}
             selectNote={selectNote}

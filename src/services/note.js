@@ -13,6 +13,9 @@ const NoteService = {
   update: (id, params) => Api.put(`/notes/${id}`, params, {
     headers: {'x-access-token': localStorage.getItem('token')}
   }),
+  search: (query) => Api.get(`/notes/search?query=${query}`, {
+    headers: {'x-access-token': localStorage.getItem('token')}
+  }),
 }
 
 export default NoteService;
