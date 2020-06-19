@@ -4,6 +4,7 @@ import { Column, Section, Title, Container, Card} from "rbx";
 import LogoImage from '../../../assets/images/logo.png';
 import "../../../styles/auth.scss";
 import UpdateForm from "../../../components/auth/update_form";
+import UsersDelete from "../../../components/users_delete";
 
 const UserEdit = () => {
   return (
@@ -34,6 +35,12 @@ const UserEdit = () => {
                   </Section>
                   
                   <UpdateForm/>
+
+                  <hr />
+
+                  <Column.Group centered>
+                      <UsersDelete/>
+                  </Column.Group>
 
                 </Card.Content>
               </Card>
