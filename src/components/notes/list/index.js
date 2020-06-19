@@ -1,15 +1,23 @@
 import React, { Fragment } from 'react';
-import { Column, Tag, Title, List } from "rbx";
+import { Column, Tag, Title, List, Button } from "rbx";
 import Moment from 'moment';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 function ListNotes(props) {
   return (
-    <div>
+    <Fragment>
         <Column.Group breakpoint="mobile">
             <Column size={6} offset={1}>
                 <Title size={6}>
                     {props.notes.length} Notes
                 </Title>
+            </Column>
+
+            <Column size={2}>
+                <Button state="active" color="custom-purple" outlined size="small" onClick={() => props.createNote()}>
+                    Notes +
+                </Button>
             </Column>
         </Column.Group>
 
@@ -30,13 +38,19 @@ function ListNotes(props) {
                                 {Moment(item.created_at).format('DD/MM')}
                             </Tag>
                         </Column>
-                    </Column.Group>
 
-                    <hr />
+                        <Column size={2}>
+                            <FontAwesomeIcon 
+                                icon={faTrash} 
+                                onClick={() => props.deleteNote(item)}
+                                color="grey"
+                            />
+                        </Column>
+                    </Column.Group>
                 </List.Item>
             ))}
         </List>
-    </div>
+    </Fragment>
   )
 }
 

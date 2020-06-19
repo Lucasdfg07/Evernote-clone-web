@@ -15,3 +15,12 @@
 .list-item.is-active{
   background-color: #E4E4E4;
 }
+
+.notes-editor {
+  padding: 0;
+  height: calc(100%);
+
+  .ql-editor {
+    padding-bottom: 50%;
+  }
+}

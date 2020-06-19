@@ -4,6 +4,7 @@ import { push as Menu } from 'react-burger-menu'
 import List from "../notes/list";
 import NoteService from '../../services/note';
 import "../../styles/notes.scss";
+import Editor from "../notes/editor";
 
 
 function Notes(props) {
@@ -19,6 +20,8 @@ function Notes(props) {
     if (response.data.length >= 1) {
       setNotes(response.data.reverse())
       setCurrentNote(response.data[0])
+    } else {
+      setNotes([]);
     }
   }
 
@@ -27,6 +30,16 @@ function Notes(props) {
       return note._id == id;
     })
     setCurrentNote(note);
+  }
+
+  const createNote = async () => {
+    await NoteService.create();
+    fetchNotes();
+  }
+
+  const deleteNote = async (note) => {
+    await NoteService.delete(note._id);
+    fetchNotes();
   }
 
   return (
@@ -44,12 +57,14 @@ function Notes(props) {
           <List
             notes={notes}
             selectNote={selectNote}
-            current_note={current_note} />
+            current_note={current_note}
+            createNote={createNote}
+            deleteNote={deleteNote} />
         </Menu>
 
 
         <Column size={12} className="notes-editor" id="notes-editor">
-          Editor...
+          <Editor note={current_note} />
         </Column>
       </div>
     </Fragment>
