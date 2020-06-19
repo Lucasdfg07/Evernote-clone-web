@@ -47,6 +47,8 @@ function ListNotes(props) {
                             />
                         </Column>
                     </Column.Group>
+
+                    <hr />
                 </List.Item>
             ))}
         </List>
