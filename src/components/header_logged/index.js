@@ -16,6 +16,11 @@ function HeaderLogged(props) {
     setRedirectToHome(true);
   }
 
+  const getUserName = () => {
+    var user = JSON.parse(localStorage.getItem('user'));
+    return user.name
+  }
+
   if (redirectToHome == true)
     return <Redirect to={{ pathname: "/" }} />
 
@@ -55,7 +60,7 @@ function HeaderLogged(props) {
                     <Dropdown>
                         <Dropdown.Trigger>
                             <Button className="button" color="white" outlined>
-                                <span>Lucas ▼</span>
+                                <span> { getUserName() } ▼</span>
                             </Button>
                         </Dropdown.Trigger>
 
