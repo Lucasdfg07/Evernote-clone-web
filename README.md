@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![Logo of the project](https://github.com/Lucasdfg07/Evernote-clone-web/blob/master/src/assets/images/logo.png)
 
-In the project directory, you can run:
 
-### `npm start`
+## Evernote Clone Web
+This is an application made with React JS. It's an application made in the course Full Stack Developer in 8 weeks by OneBitCode.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Principal Image](https://github.com/Lucasdfg07/Evernote-clone-web/blob/master/src/assets/images/presentation.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Technology 
+Here are the technologies used in this project.
 
-### `npm test`
+* React JS
+* Axios
+* React-router-dom
+* RBX
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Services Used
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Github
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting started
 
-### `npm run eject`
+* Dependency
+  - Git
+  - NPM
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* To clone the project:
+>    $ git clone https://github.com/Lucasdfg07/Evernote-clone-web
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* To run the project:
+>    $ npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Run the API on port 3333
+>    $ git clone https://github.com/Lucasdfg07/Evernote-clone-api
+>    $ PORT=3333 nodemon
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Links
+  - Repository: https://github.com/Lucasdfg07/Evernote-clone-web
+    - In case of sensitive bugs like security vulnerabilities, please contact
+      Lucassiqueiraferandes07@gmail.com directly instead of using issue tracker. We value your effort
+      to improve the security and privacy of this project!
 
-## Learn More
+  ## Versioning
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  1.0.0.0
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+  ## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+  * **Lucas Siqueira Fernandes** 
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  Please follow github and join us!
+  Thanks to visiting me and good coding!
